@@ -1,0 +1,696 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A03F5A2E29032CBE00E0E444 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03F5A2D29032CBE00E0E444 /* AppDelegate.swift */; };
+		A03F5A3029032CBE00E0E444 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03F5A2F29032CBE00E0E444 /* SceneDelegate.swift */; };
+		A03F5A3729032CC100E0E444 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A03F5A3629032CC100E0E444 /* Assets.xcassets */; };
+		A03F5A3A29032CC100E0E444 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A03F5A3829032CC100E0E444 /* LaunchScreen.storyboard */; };
+		A03F5A432903306200E0E444 /* CoordinatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03F5A422903306200E0E444 /* CoordinatorProtocol.swift */; };
+		A03F5A4A2903331400E0E444 /* GatitosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03F5A492903331400E0E444 /* GatitosViewController.swift */; };
+		A03F5A4D290333B400E0E444 /* GatitosViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03F5A4C290333B400E0E444 /* GatitosViewModel.swift */; };
+		A03F5A4F2903368800E0E444 /* GatitosDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03F5A4E2903368800E0E444 /* GatitosDetailsViewModel.swift */; };
+		A03F5A5129033A1200E0E444 /* GatitosDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03F5A5029033A1200E0E444 /* GatitosDetailsViewController.swift */; };
+		A03F5A542903403800E0E444 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = A03F5A532903403800E0E444 /* Lottie */; };
+		A03F5A57290340E400E0E444 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = A03F5A56290340E400E0E444 /* Alamofire */; };
+		A03F5A5A2903413400E0E444 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = A03F5A592903413400E0E444 /* Kingfisher */; };
+		A03F5A612903459700E0E444 /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03F5A602903459700E0E444 /* Observable.swift */; };
+		A03F5A63290345D300E0E444 /* ViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03F5A62290345D300E0E444 /* ViewModelProtocol.swift */; };
+		A03F5A6729034AAF00E0E444 /* Apply.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03F5A6629034AAF00E0E444 /* Apply.swift */; };
+		A03F5A6929034AD600E0E444 /* UIView+Autolayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03F5A6829034AD600E0E444 /* UIView+Autolayout.swift */; };
+		A03F5A6D2903528800E0E444 /* CodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03F5A6C2903528800E0E444 /* CodeView.swift */; };
+		A03F5A7F290354F200E0E444 /* GatitosCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03F5A7E290354F200E0E444 /* GatitosCoordinator.swift */; };
+		A03F5A82290357BC00E0E444 /* WsStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03F5A81290357BC00E0E444 /* WsStatus.swift */; };
+		A03F5A84290359B800E0E444 /* GatitosDetailsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03F5A83290359B800E0E444 /* GatitosDetailsCoordinator.swift */; };
+		A03F5A86290363EA00E0E444 /* splash.json in Resources */ = {isa = PBXBuildFile; fileRef = A03F5A85290363EA00E0E444 /* splash.json */; };
+		A03F5A8B2903696300E0E444 /* GatitosTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03F5A8A2903696300E0E444 /* GatitosTableViewCell.swift */; };
+		A03F5A9029045A2B00E0E444 /* GatitosModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03F5A8F29045A2B00E0E444 /* GatitosModel.swift */; };
+		A03F5A9229045AE800E0E444 /* WsTypeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03F5A9129045AE800E0E444 /* WsTypeService.swift */; };
+		A03F5A9429045C8E00E0E444 /* URLBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03F5A9329045C8E00E0E444 /* URLBase.swift */; };
+		A03F5A9A2904604A00E0E444 /* Ws.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03F5A992904604A00E0E444 /* Ws.swift */; };
+		A03F5A9D290460E600E0E444 /* Connectivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03F5A9C290460E600E0E444 /* Connectivity.swift */; };
+		A03F5AA0290461C300E0E444 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03F5A9F290461C300E0E444 /* Session.swift */; };
+		A03F5AA52904650700E0E444 /* environment.plist in Resources */ = {isa = PBXBuildFile; fileRef = A03F5AA42904650700E0E444 /* environment.plist */; };
+		A03F5AA829046C3900E0E444 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03F5AA729046C3900E0E444 /* Service.swift */; };
+		A03F5AAA29049C2700E0E444 /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03F5AA929049C2700E0E444 /* Operators.swift */; };
+		A03F5AAC2904D05100E0E444 /* ImageResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03F5AAB2904D05100E0E444 /* ImageResponse.swift */; };
+		A03F5AB22905147A00E0E444 /* loading.json in Resources */ = {isa = PBXBuildFile; fileRef = A03F5AB12905147A00E0E444 /* loading.json */; };
+		A07CF5DF290528D800C1BFBE /* ModalExceptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07CF5DE290528D800C1BFBE /* ModalExceptionView.swift */; };
+		A07CF5E12905299200C1BFBE /* DefaultButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07CF5E02905299200C1BFBE /* DefaultButton.swift */; };
+		A07CF5E329052BB400C1BFBE /* Localizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07CF5E229052BB400C1BFBE /* Localizable.swift */; };
+		A07CF5E529052C0E00C1BFBE /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07CF5E429052C0E00C1BFBE /* Strings.swift */; };
+		A07CF5E729052D3300C1BFBE /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A07CF5E629052D3300C1BFBE /* Localizable.strings */; };
+		A07CF5E929052E3100C1BFBE /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07CF5E829052E3100C1BFBE /* Images.swift */; };
+		A07CF5EB29052FA800C1BFBE /* BottomSheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07CF5EA29052FA800C1BFBE /* BottomSheetViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A03F5A2A29032CBE00E0E444 /* Gatitos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gatitos.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A03F5A2D29032CBE00E0E444 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A03F5A2F29032CBE00E0E444 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		A03F5A3629032CC100E0E444 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A03F5A3929032CC100E0E444 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A03F5A3B29032CC100E0E444 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A03F5A422903306200E0E444 /* CoordinatorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorProtocol.swift; sourceTree = "<group>"; };
+		A03F5A492903331400E0E444 /* GatitosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GatitosViewController.swift; sourceTree = "<group>"; };
+		A03F5A4C290333B400E0E444 /* GatitosViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GatitosViewModel.swift; sourceTree = "<group>"; };
+		A03F5A4E2903368800E0E444 /* GatitosDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GatitosDetailsViewModel.swift; sourceTree = "<group>"; };
+		A03F5A5029033A1200E0E444 /* GatitosDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GatitosDetailsViewController.swift; sourceTree = "<group>"; };
+		A03F5A602903459700E0E444 /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
+		A03F5A62290345D300E0E444 /* ViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelProtocol.swift; sourceTree = "<group>"; };
+		A03F5A6629034AAF00E0E444 /* Apply.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Apply.swift; sourceTree = "<group>"; };
+		A03F5A6829034AD600E0E444 /* UIView+Autolayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Autolayout.swift"; sourceTree = "<group>"; };
+		A03F5A6C2903528800E0E444 /* CodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeView.swift; sourceTree = "<group>"; };
+		A03F5A7E290354F200E0E444 /* GatitosCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GatitosCoordinator.swift; sourceTree = "<group>"; };
+		A03F5A81290357BC00E0E444 /* WsStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WsStatus.swift; sourceTree = "<group>"; };
+		A03F5A83290359B800E0E444 /* GatitosDetailsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GatitosDetailsCoordinator.swift; sourceTree = "<group>"; };
+		A03F5A85290363EA00E0E444 /* splash.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = splash.json; sourceTree = "<group>"; };
+		A03F5A8A2903696300E0E444 /* GatitosTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GatitosTableViewCell.swift; sourceTree = "<group>"; };
+		A03F5A8F29045A2B00E0E444 /* GatitosModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GatitosModel.swift; sourceTree = "<group>"; };
+		A03F5A9129045AE800E0E444 /* WsTypeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WsTypeService.swift; sourceTree = "<group>"; };
+		A03F5A9329045C8E00E0E444 /* URLBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLBase.swift; sourceTree = "<group>"; };
+		A03F5A992904604A00E0E444 /* Ws.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ws.swift; sourceTree = "<group>"; };
+		A03F5A9C290460E600E0E444 /* Connectivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Connectivity.swift; sourceTree = "<group>"; };
+		A03F5A9F290461C300E0E444 /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
+		A03F5AA42904650700E0E444 /* environment.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = environment.plist; sourceTree = "<group>"; };
+		A03F5AA729046C3900E0E444 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		A03F5AA929049C2700E0E444 /* Operators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Operators.swift; sourceTree = "<group>"; };
+		A03F5AAB2904D05100E0E444 /* ImageResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageResponse.swift; sourceTree = "<group>"; };
+		A03F5AB12905147A00E0E444 /* loading.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = loading.json; sourceTree = "<group>"; };
+		A07CF5DE290528D800C1BFBE /* ModalExceptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalExceptionView.swift; sourceTree = "<group>"; };
+		A07CF5E02905299200C1BFBE /* DefaultButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultButton.swift; sourceTree = "<group>"; };
+		A07CF5E229052BB400C1BFBE /* Localizable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localizable.swift; sourceTree = "<group>"; };
+		A07CF5E429052C0E00C1BFBE /* Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
+		A07CF5E629052D3300C1BFBE /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		A07CF5E829052E3100C1BFBE /* Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
+		A07CF5EA29052FA800C1BFBE /* BottomSheetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A03F5A2729032CBE00E0E444 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A03F5A5A2903413400E0E444 /* Kingfisher in Frameworks */,
+				A03F5A542903403800E0E444 /* Lottie in Frameworks */,
+				A03F5A57290340E400E0E444 /* Alamofire in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A03F5A2129032CBE00E0E444 = {
+			isa = PBXGroup;
+			children = (
+				A03F5A2C29032CBE00E0E444 /* Gatitos */,
+				A03F5A2B29032CBE00E0E444 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A03F5A2B29032CBE00E0E444 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A03F5A2A29032CBE00E0E444 /* Gatitos.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A03F5A2C29032CBE00E0E444 /* Gatitos */ = {
+			isa = PBXGroup;
+			children = (
+				A07CF5EC2905BF3B00C1BFBE /* Delegates */,
+				A03F5AA12904647600E0E444 /* Environment */,
+				A03F5A8D29045A0100E0E444 /* Model */,
+				A03F5A8C290459F500E0E444 /* Network */,
+				A03F5AA629046C2800E0E444 /* Services */,
+				A03F5A6E290352F800E0E444 /* Scenes */,
+				A03F5A412903304E00E0E444 /* Coordinator */,
+				A03F5A5B290344B800E0E444 /* Utils */,
+				A03F5A3B29032CC100E0E444 /* Info.plist */,
+			);
+			path = Gatitos;
+			sourceTree = "<group>";
+		};
+		A03F5A412903304E00E0E444 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				A03F5A422903306200E0E444 /* CoordinatorProtocol.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		A03F5A5B290344B800E0E444 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				A03F5A3629032CC100E0E444 /* Assets.xcassets */,
+				A03F5AA929049C2700E0E444 /* Operators.swift */,
+				A03F5A602903459700E0E444 /* Observable.swift */,
+				A03F5A62290345D300E0E444 /* ViewModelProtocol.swift */,
+				A03F5A6629034AAF00E0E444 /* Apply.swift */,
+				A03F5A6829034AD600E0E444 /* UIView+Autolayout.swift */,
+				A03F5A6C2903528800E0E444 /* CodeView.swift */,
+				A03F5A85290363EA00E0E444 /* splash.json */,
+				A03F5AB12905147A00E0E444 /* loading.json */,
+				A07CF5E229052BB400C1BFBE /* Localizable.swift */,
+				A07CF5E429052C0E00C1BFBE /* Strings.swift */,
+				A07CF5E629052D3300C1BFBE /* Localizable.strings */,
+				A07CF5E829052E3100C1BFBE /* Images.swift */,
+				A07CF5EA29052FA800C1BFBE /* BottomSheetViewController.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		A03F5A6E290352F800E0E444 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				A03F5A3829032CC100E0E444 /* LaunchScreen.storyboard */,
+				A03F5A892903694D00E0E444 /* Views */,
+				A03F5A712903531B00E0E444 /* Gatitos */,
+				A03F5A722903532400E0E444 /* GatitosDetails */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		A03F5A712903531B00E0E444 /* Gatitos */ = {
+			isa = PBXGroup;
+			children = (
+				A03F5A732903534C00E0E444 /* Coordinator */,
+				A03F5A762903537100E0E444 /* ViewModel */,
+				A03F5A752903536500E0E444 /* Controller */,
+			);
+			path = Gatitos;
+			sourceTree = "<group>";
+		};
+		A03F5A722903532400E0E444 /* GatitosDetails */ = {
+			isa = PBXGroup;
+			children = (
+				A03F5A79290353B900E0E444 /* Coordinator */,
+				A03F5A78290353B200E0E444 /* ViewModel */,
+				A03F5A77290353AA00E0E444 /* Controller */,
+			);
+			path = GatitosDetails;
+			sourceTree = "<group>";
+		};
+		A03F5A732903534C00E0E444 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				A03F5A7E290354F200E0E444 /* GatitosCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		A03F5A752903536500E0E444 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A03F5A492903331400E0E444 /* GatitosViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		A03F5A762903537100E0E444 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				A03F5A4C290333B400E0E444 /* GatitosViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		A03F5A77290353AA00E0E444 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A03F5A5029033A1200E0E444 /* GatitosDetailsViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		A03F5A78290353B200E0E444 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				A03F5A4E2903368800E0E444 /* GatitosDetailsViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		A03F5A79290353B900E0E444 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				A03F5A83290359B800E0E444 /* GatitosDetailsCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		A03F5A892903694D00E0E444 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A03F5A8A2903696300E0E444 /* GatitosTableViewCell.swift */,
+				A07CF5DE290528D800C1BFBE /* ModalExceptionView.swift */,
+				A07CF5E02905299200C1BFBE /* DefaultButton.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A03F5A8C290459F500E0E444 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				A03F5A9E290461A800E0E444 /* Managers */,
+				A03F5A9B290460C200E0E444 /* Internet */,
+				A03F5A81290357BC00E0E444 /* WsStatus.swift */,
+				A03F5A9129045AE800E0E444 /* WsTypeService.swift */,
+				A03F5A9329045C8E00E0E444 /* URLBase.swift */,
+				A03F5A992904604A00E0E444 /* Ws.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		A03F5A8D29045A0100E0E444 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A03F5A8F29045A2B00E0E444 /* GatitosModel.swift */,
+				A03F5AAB2904D05100E0E444 /* ImageResponse.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A03F5A9B290460C200E0E444 /* Internet */ = {
+			isa = PBXGroup;
+			children = (
+				A03F5A9C290460E600E0E444 /* Connectivity.swift */,
+			);
+			path = Internet;
+			sourceTree = "<group>";
+		};
+		A03F5A9E290461A800E0E444 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				A03F5A9F290461C300E0E444 /* Session.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		A03F5AA12904647600E0E444 /* Environment */ = {
+			isa = PBXGroup;
+			children = (
+				A03F5AA42904650700E0E444 /* environment.plist */,
+			);
+			path = Environment;
+			sourceTree = "<group>";
+		};
+		A03F5AA629046C2800E0E444 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				A03F5AA729046C3900E0E444 /* Service.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		A07CF5EC2905BF3B00C1BFBE /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				A03F5A2F29032CBE00E0E444 /* SceneDelegate.swift */,
+				A03F5A2D29032CBE00E0E444 /* AppDelegate.swift */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A03F5A2929032CBE00E0E444 /* Gatitos */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A03F5A3E29032CC100E0E444 /* Build configuration list for PBXNativeTarget "Gatitos" */;
+			buildPhases = (
+				A03F5A2629032CBE00E0E444 /* Sources */,
+				A03F5A2729032CBE00E0E444 /* Frameworks */,
+				A03F5A2829032CBE00E0E444 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Gatitos;
+			packageProductDependencies = (
+				A03F5A532903403800E0E444 /* Lottie */,
+				A03F5A56290340E400E0E444 /* Alamofire */,
+				A03F5A592903413400E0E444 /* Kingfisher */,
+			);
+			productName = Gatitos;
+			productReference = A03F5A2A29032CBE00E0E444 /* Gatitos.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A03F5A2229032CBE00E0E444 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1400;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					A03F5A2929032CBE00E0E444 = {
+						CreatedOnToolsVersion = 14.0.1;
+					};
+				};
+			};
+			buildConfigurationList = A03F5A2529032CBE00E0E444 /* Build configuration list for PBXProject "Gatitos" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A03F5A2129032CBE00E0E444;
+			packageReferences = (
+				A03F5A522903403800E0E444 /* XCRemoteSwiftPackageReference "lottie-ios" */,
+				A03F5A55290340E400E0E444 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				A03F5A582903413400E0E444 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
+			productRefGroup = A03F5A2B29032CBE00E0E444 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A03F5A2929032CBE00E0E444 /* Gatitos */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A03F5A2829032CBE00E0E444 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A03F5A3A29032CC100E0E444 /* LaunchScreen.storyboard in Resources */,
+				A07CF5E729052D3300C1BFBE /* Localizable.strings in Resources */,
+				A03F5A3729032CC100E0E444 /* Assets.xcassets in Resources */,
+				A03F5A86290363EA00E0E444 /* splash.json in Resources */,
+				A03F5AA52904650700E0E444 /* environment.plist in Resources */,
+				A03F5AB22905147A00E0E444 /* loading.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A03F5A2629032CBE00E0E444 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A03F5A612903459700E0E444 /* Observable.swift in Sources */,
+				A03F5A4F2903368800E0E444 /* GatitosDetailsViewModel.swift in Sources */,
+				A03F5AA829046C3900E0E444 /* Service.swift in Sources */,
+				A03F5A82290357BC00E0E444 /* WsStatus.swift in Sources */,
+				A07CF5E12905299200C1BFBE /* DefaultButton.swift in Sources */,
+				A03F5A4D290333B400E0E444 /* GatitosViewModel.swift in Sources */,
+				A07CF5E329052BB400C1BFBE /* Localizable.swift in Sources */,
+				A07CF5E929052E3100C1BFBE /* Images.swift in Sources */,
+				A03F5A63290345D300E0E444 /* ViewModelProtocol.swift in Sources */,
+				A03F5A6929034AD600E0E444 /* UIView+Autolayout.swift in Sources */,
+				A03F5A84290359B800E0E444 /* GatitosDetailsCoordinator.swift in Sources */,
+				A03F5AAA29049C2700E0E444 /* Operators.swift in Sources */,
+				A03F5A432903306200E0E444 /* CoordinatorProtocol.swift in Sources */,
+				A07CF5DF290528D800C1BFBE /* ModalExceptionView.swift in Sources */,
+				A03F5A9A2904604A00E0E444 /* Ws.swift in Sources */,
+				A03F5A9429045C8E00E0E444 /* URLBase.swift in Sources */,
+				A03F5A9D290460E600E0E444 /* Connectivity.swift in Sources */,
+				A03F5A8B2903696300E0E444 /* GatitosTableViewCell.swift in Sources */,
+				A03F5A6D2903528800E0E444 /* CodeView.swift in Sources */,
+				A03F5AAC2904D05100E0E444 /* ImageResponse.swift in Sources */,
+				A03F5A5129033A1200E0E444 /* GatitosDetailsViewController.swift in Sources */,
+				A03F5A2E29032CBE00E0E444 /* AppDelegate.swift in Sources */,
+				A03F5A9029045A2B00E0E444 /* GatitosModel.swift in Sources */,
+				A07CF5E529052C0E00C1BFBE /* Strings.swift in Sources */,
+				A03F5A9229045AE800E0E444 /* WsTypeService.swift in Sources */,
+				A03F5A6729034AAF00E0E444 /* Apply.swift in Sources */,
+				A03F5AA0290461C300E0E444 /* Session.swift in Sources */,
+				A03F5A7F290354F200E0E444 /* GatitosCoordinator.swift in Sources */,
+				A03F5A4A2903331400E0E444 /* GatitosViewController.swift in Sources */,
+				A07CF5EB29052FA800C1BFBE /* BottomSheetViewController.swift in Sources */,
+				A03F5A3029032CBE00E0E444 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A03F5A3829032CC100E0E444 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A03F5A3929032CC100E0E444 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A03F5A3C29032CC100E0E444 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A03F5A3D29032CC100E0E444 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A03F5A3F29032CC100E0E444 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Gatitos/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.oliveira.luis.Gatitos;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		A03F5A4029032CC100E0E444 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Gatitos/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.oliveira.luis.Gatitos;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A03F5A2529032CBE00E0E444 /* Build configuration list for PBXProject "Gatitos" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A03F5A3C29032CC100E0E444 /* Debug */,
+				A03F5A3D29032CC100E0E444 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A03F5A3E29032CC100E0E444 /* Build configuration list for PBXNativeTarget "Gatitos" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A03F5A3F29032CC100E0E444 /* Debug */,
+				A03F5A4029032CC100E0E444 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A03F5A522903403800E0E444 /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
+		A03F5A55290340E400E0E444 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		A03F5A582903413400E0E444 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A03F5A532903403800E0E444 /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A03F5A522903403800E0E444 /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
+		};
+		A03F5A56290340E400E0E444 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A03F5A55290340E400E0E444 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		A03F5A592903413400E0E444 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A03F5A582903413400E0E444 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = A03F5A2229032CBE00E0E444 /* Project object */;
+}
